@@ -96,3 +96,19 @@ body {
   margin-top: 1rem;
   pointer-events: none;
 }
+.result_images > div.active {
+  transform-origin: center;
+  animation: shake 0.7s ease infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
